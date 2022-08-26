@@ -1,0 +1,84 @@
+.app{
+  font-family: Mukta, sans-serif;;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #A9C9FF;
+  background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+}
+
+.Navbar{
+  height: 3rem;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.315);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  vertical-align: baseline;
+}
+
+.logo{
+  width: clamp(10rem, -0.1786rem + 4.5714vw, 15rem);;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: clamp(0.85rem, -0.1786rem + 4.5714vw, 1rem);;
+  padding: 12px 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  vertical-align:middle
+}
+
+.Navbar button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.Navbar button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  vertical-align: middle;
+  font-size: clamp(1.35rem, -0.1786rem + 4.5714vw, 1.35rem);
+  right: -25px;
+  top: -26%;
+  transition: 0.5s;
+}
+
+.Navbar button:hover span {
+  padding-right: 25px;
+}
+
+.Navbar button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.app_user{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 25px 0;
+  margin: 0 auto;
+  position: relative;
+}
