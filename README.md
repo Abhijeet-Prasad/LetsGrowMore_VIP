@@ -1,7 +1,7 @@
 # LetsGrowMore Virtual Internship Program
 
 ## About Intership
-I glad to share that I have been selected as Web developer Intern at LetsGrowMore. The Internship duraraion is of 1 month during which all the interns are provided with the opertunity to learn and develope their skills as a web developer by building projects.
+I glad to be part of LetsGrowMore Community as Web Developer Intern. The Internship duraraion is of 1 month during which I was provided with the opertunity to learn and develope my skills as a web developer by building projects.
 
 ## Skills Learned
 During the internship program some of the skills I gained are - 
