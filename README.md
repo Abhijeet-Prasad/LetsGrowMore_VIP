@@ -22,4 +22,4 @@ During the internship I was able to develope 4 projects in total that are listed
 My name is Abhijeet Prasad. I have completed my Masters in Computer Science. I am a skilled and innovative frontend Web Developer and Python Programmer.
 
 Below is my LinkedIn profile link if anyone wish to connect with me can do so via LinkedIn.
-https://www.linkedin.com/in/abhijeet-prasad-08/
+www.linkedin.com/in/abhijeetprasad15
