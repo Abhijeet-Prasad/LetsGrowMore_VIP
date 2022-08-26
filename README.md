@@ -1,1 +1,1 @@
-# LetsGrowMore_VIP
+# LetsGrowMore Virtual Internship Program
