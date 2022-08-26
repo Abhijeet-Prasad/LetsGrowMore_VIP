@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Student Enrollment</title>
+</head>
+<body>
+    <header>
+        <h1>Student Enrollment Form</h1>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <ul class="nav nav-tabs col-11 col-md-10">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" id="enrollment-tab">Enrollment Form</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-nowrap" href="#" id="dataTable-tab">Enrolled Students</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container col-11 col-md-10 py-5 px-3 px-md-5 shadow active-container" id="enrollment-form">
+            <form class="needs-validation" novalidate action="javascript:void(0);">
+                <div class="row mb-3 gx-0">
+                    <label for="name" class="col-sm-3 col-form-label">Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" pattern="[a-zA-Z .]*" class="form-control" id="name" placeholder="Enter Your Name" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid Name (Numbers and Special characters are not allowed)
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mb-3 gx-0">
+                    <label for="email" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" class="form-control" id="email" placeholder="Enter Your Email Id" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid email id.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mb-3 gx-0">
+                    <label for="websiteLink" class="col-sm-3 col-form-label">Website</label>
+                    <div class="col-sm-9">
+                        <input type="url" pattern="[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?" class="form-control" id="websiteLink" placeholder="Your Personal Website Link">
+                        <div class="invalid-feedback">
+                            Please enter a valid URL(starting with http:// or https://)
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mb-3 gx-0">
+                    <label for="profilePic" class="col-sm-3 col-form-label">Image Link</label>
+                    <div class="col-sm-9">
+                        <input type="url" pattern="[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?" class="form-control" id="profilePic" placeholder="Your Profile Image Link">
+                        <div class="invalid-feedback">
+                            Please enter a valid URL(starting with http:// or https://)
+                        </div>
+                    </div>
+                </div>
+    
+                <fieldset class="row mb-3 gx-0">
+                    <legend class="col-form-label col-sm-3 pt-0">Gender</legend>
+                    <div class="col-sm-9 row">
+                        <div class="form-check col">
+                            <input class="form-check-input" type="radio" name="gender" value="Male" checked>
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="radio" name="gender" value="Female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check col">
+                            <input class="form-check-input" type="radio" name="gender" value="Other">
+                            <label class="form-check-label" for="other" >Other</label>
+                        </div>
+                    </div>
+                </fieldset>
+    
+                <div class="row mb-3 gx-0">
+                    <legend class="col-form-label col-sm-3 pt-0">Skills</legend>
+                    <div class="col-sm-9 row justify-content-even">
+                        <div class="form-check col-6 col-sm-4">
+                            <input class="form-check-input" type="checkbox" name="html" value="HTML">
+                            <label class="form-check-label" for="html">HTML</label>
+                        </div>
+                        <div class="form-check col-6 col-sm-4">
+                            <input class="form-check-input" type="checkbox" name="css" value="CSS">
+                            <label class="form-check-label" for="css">CSS</label>
+                        </div>
+                        <div class="form-check col-6 col-sm-4">
+                            <input class="form-check-input" type="checkbox" name="javascript" value="JavaScript">
+                            <label class="form-check-label" for="javascript">JavaScript</label>
+                        </div>
+                        <div class="form-check col-6 col-sm-4">
+                            <input class="form-check-input" type="checkbox" name="react" value="React">
+                            <label class="form-check-label" for="react">React</label>
+                        </div>
+                        <div class="form-check col-6 col-sm-4">
+                            <input class="form-check-input" type="checkbox" name="angular" value="Angular">
+                            <label class="form-check-label" for="angular">Angular</label>
+                        </div>
+                        <div class="form-check col-6 col-sm-4">
+                            <input class="form-check-input" type="checkbox" name="nodejs" value="NodeJs">
+                            <label class="form-check-label" for="nodejs">NodeJs</label>
+                        </div>
+                        <div class="form-check col-6 col-sm-4">
+                            <input class="form-check-input" type="checkbox" name="php" value="PHP">
+                            <label class="form-check-label" for="php">PHP</label>
+                        </div>
+                        <div class="form-check col-6 col-sm-4">
+                            <input class="form-check-input" type="checkbox" name="sql" value="SQL">
+                            <label class="form-check-label" for="sql">SQL</label>
+                        </div>
+                        <div class="form-check col-6 col-sm-4">
+                            <input class="form-check-input" type="checkbox" name="seo" value="SEO">
+                            <label class="form-check-label" for="seo">SEO</label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row justify-content-center gx-0">
+                    <div class="col-6 col-md-4 pt-4">
+                        <button type="submit" class="btn btn-primary text-nowrap">Enroll Student</button>
+                    </div>
+                    <div class="col-4 col-md-2 pt-4">
+                        <button type="reset" class="btn btn-danger" id="clear">Clear</button>
+                    </div>
+                </div>
+            </form>             
+        </div>
+
+        <div class="container col-11 col-md-10 py-5 px-3 px-md-5 shadow" id="student-details">
+
+            <div class="alert alert-info" role="alert">
+                No Students is enrolled Yet....!
+            </div>
+            
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Description</th>
+                        <th scope="col">Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
